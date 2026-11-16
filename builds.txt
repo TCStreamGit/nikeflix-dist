@@ -1,0 +1,10 @@
+# NikeFlix build feed (staged offline by tools/nfbuild/feed.py; NOT published)
+schema="nikeflix.builds/1"
+
+name="NikeFlix"
+edition="regular"
+version="4.0.0"
+url="https://github.com/TCStreamGit/nikeflix-dist/releases/download/v4.0.0/nikeflixwizard-4.0.0.zip"
+sha256="7297de86bc1427f4a4246cb5d5d5a018c00a8930cee09dece0889f3d99ede943"
+size="238753827"
+kodi="21.3"

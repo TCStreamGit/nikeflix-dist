@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.nikeflixwizard" name="NikeFlix Wizard" version="4.0.0" provider-name="TanDMoss">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+        <import addon="script.speedtester" optional="true" version="1.1.2" />
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">NikeFlix</summary>
+        <description lang="en">Installs and updates the NikeFlix build: verified downloads, clean five-profile installs and no start-up pop-ups.</description>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later AND BSD-3-Clause</license>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://github.com/a4k-openproject/plugin.program.openwizard</source>
+        <news>
+4.0.0
+ - NikeFlix next generation (Kodi 21.3): new nikeflix-dist build feed with sha256 verification
+ - Clean install: removes every profile, setting and database (safety backup first)
+ - Installs the build's add-on origin seed and the official-only update settings
+ - Optional Fen 4 fallback installer (from its author, hash-verified)
+ - No start-up pop-ups in any profile; semantic version checks; verified self-update
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

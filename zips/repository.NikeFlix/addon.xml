@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.NikeFlix" name="NikeFlix repository" version="4.0.0" provider-name="TanDMoss">
+    <extension point="xbmc.addon.repository" name="NikeFlix repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/TCStreamGit/nikeflix-dist/main/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/TCStreamGit/nikeflix-dist/main/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/TCStreamGit/nikeflix-dist/main/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">NikeFlix repository</summary>
+        <description lang="en_GB">Certified NikeFlix add-ons for Kodi 21.3 (nikeflix-dist).</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
