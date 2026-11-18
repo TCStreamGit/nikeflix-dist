@@ -90,7 +90,7 @@
         </assets>
     </extension>
 </addon>
-<addon id="plugin.program.nikeflixwizard" name="NikeFlix Wizard" version="4.0.0" provider-name="TanDMoss">
+<addon id="plugin.program.nikeflixwizard" name="NikeFlix Wizard" version="4.0.1" provider-name="TanDMoss">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
@@ -112,6 +112,11 @@
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <source>https://github.com/a4k-openproject/plugin.program.openwizard</source>
         <news>
+4.0.1
+ - New look: a home card with the build artwork and one clear button (Install, Update or Reinstall)
+ - Everything is asked once, up front; a phased progress screen replaces the chain of pop-ups
+ - Backup, restore and maintenance under Tools, in the same style
+ - Christmas artwork from December 1 to December 26, by date
 4.0.0
  - NikeFlix next generation (Kodi 21.3): new nikeflix-dist build feed with sha256 verification
  - Clean install: removes every profile, setting and database (safety backup first)
@@ -151,7 +156,7 @@
 	</extension>
 </addon>
 <addon id="plugin.video.themoviedb.helper"
-version="6.17.9+nikeflix.2"
+version="6.17.9+nikeflix.4"
 name="TMDb Helper"
 provider-name="jurialmunkey">
 <requires>
@@ -199,7 +204,7 @@ provider-name="jurialmunkey">
   </assets>
 </extension>
 </addon>
-<addon id="plugin.video.umbrella" name="Umbrella" provider-name="Umbrella" version="6.7.92+nikeflix.3">
+<addon id="plugin.video.umbrella" name="Umbrella" provider-name="Umbrella" version="6.7.92+nikeflix.4">
 	<requires>
 		<import addon="xbmc.python" version="3.0.0" />
 		<import addon="script.module.requests" />
@@ -611,7 +616,7 @@ provider-name="jurialmunkey">
 ### New
 - Add option to play YouTube error notification video upon playback failure</news></extension>
 </addon>
-<addon id="repository.NikeFlix" name="NikeFlix repository" version="4.0.0" provider-name="TanDMoss">
+<addon id="repository.NikeFlix" name="NikeFlix repository" version="4.0.1" provider-name="TanDMoss">
     <extension point="xbmc.addon.repository" name="NikeFlix repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/TCStreamGit/nikeflix-dist/main/zips/addons.xml</info>
@@ -1796,7 +1801,7 @@ provider-name="jurialmunkey">
   </assets>
 </extension>
 </addon>
-<addon id="service.nikeflix" name="NikeFlix Service" version="0.2.8" provider-name="NikeFlix">
+<addon id="service.nikeflix" name="NikeFlix Service" version="0.2.9" provider-name="NikeFlix">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -1807,7 +1812,7 @@ provider-name="jurialmunkey">
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en_GB">NikeFlix core service: playback routing (Umbrella primary, Fen 4 fallback) and profile isolation guard</summary>
-    <description lang="en_GB">Part of NikeFlix. Later tasks add the Trakt Hub broker, Quiet Mode, continuation, weather repair, intro-once and shutdown helpers.</description>
+    <description lang="en_GB">Part of NikeFlix. Trakt Hub broker (one Trakt sign-in per profile, shared by every add-on), Quiet Mode, Skip Intro, weather, intro-once, profile-switch quiescence and repository-check scheduling.</description>
     <platform>all</platform>
     <license>GPL-3.0-or-later</license>
   </extension>
